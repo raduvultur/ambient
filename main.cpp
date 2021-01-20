@@ -6,6 +6,16 @@ Used libraries:
 	wifwaf/MH-Z19@^1.5.3
 	arduino-libraries/NTPClient@^3.1.0
 	ricki-z/SDS011 sensor Library@^0.0.6
+
+Modification of HardwareSerial.cpp (for the SDS011 serial pins)
+
+#ifndef RX1
+#define RX1 12
+#endif
+
+#ifndef TX1
+#define TX1 14
+#endif
 */
 
 #include <WiFi.h>
